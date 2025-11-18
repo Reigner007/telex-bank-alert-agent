@@ -10,7 +10,7 @@ console.log('Env check → IMAP_USER:', process.env.IMAP_USER ? 'loaded' : 'miss
 console.log('Env check → OPENAI_API_KEY:', process.env.OPENAI_API_KEY ? 'loaded' : 'missing');
 
 import dotenv from 'dotenv';
-import { Mastra } from '@mastra/core/mastra';  // Subpath for Mastra class
+import { Mastra } from '@mastra/core/mastra';  // Correct subpath for Mastra class
 import { createBankAlertAgent } from './agents/bank-alert-agent.js';
 import type { Transaction } from './services/transaction-matcher.js';  // For self-test
 
